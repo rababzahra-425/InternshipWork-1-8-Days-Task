@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Layout Task</title>
+    <link rel="stylesheet" href="2_style.css">
+</head>
+<body>
+
+    <main class="container">
+        <section class="card box-model-demo">
+            <h2 class="section-title">1. Box Model Mastery</h2>
+            <p class="description">
+                This card has <code>box-sizing: border-box</code> applied. Its padding and border are perfectly managed within its maximum width.
+            </p>
+            <div class="inner-box">Inside Content Box</div>
+        </section>
+
+        <section class="card display-demo">
+            <h2 class="section-title">2. Display Behaviors</h2>
+            
+            <div class="block-element">
+                <strong>Block Element (&lt;div&gt;):</strong> I occupy the full available width and respect margins and paddings from all sides.
+            </div>
+
+            <div class="inline-container">
+                <span class="inline-element">Inline (&lt;span&gt;) 1</span>
+                <span class="inline-element">Inline (&lt;span&gt;) 2</span>
+            </div>
+            <p class="note">Notice that no vertical gaps are created between inline elements.</p>
+
+            <div class="inline-block-container">
+                <a href="https://www.google.com/" class="button-element">Google</a>
+                <a href="https://www.bing.com/ck/a?!&&p=0bd1e28d2463dfbc8f9894553998e9fde773d67f5c1b14db1a80dbfe51d813d9JmltdHM9MTc4MTc0MDgwMA&ptn=3&ver=2&hsh=4&fclid=106ae392-c4e4-6b3f-0428-f5fac5f66a16&psq=techaxe&u=a1aHR0cHM6Ly90aGV0ZWNoYXhlLmNvbS8" class="button-element">Techaxe</a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

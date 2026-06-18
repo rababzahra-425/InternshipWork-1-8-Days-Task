@@ -1,0 +1,118 @@
+/* ==========================================================================
+   1. Universal Reset & Root Settings
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures predictable box model calculations */
+}
+
+html {
+    font-size: 16px; /* Base for rem units */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #333333;
+    padding: 2.5rem;
+}
+
+/* ==========================================================================
+   2. Layout Structure
+   ========================================================================== */
+.container {
+    max-width: 800px;
+    margin: 0 auto; /* Centers the main container */
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem; /* Demostrates vertical spacing */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e1e4e8;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+   3. Box Model Depth Demonstration
+   ========================================================================== */
+.inner-box {
+    background-color: #e8f4fd;
+    color: #2b6cb0;
+    padding: 1.5rem;          /* Internal spacing */
+    border: 2px dashed #3498db; /* Border layer */
+    margin-top: 1rem;        /* External spacing preventing collapse here */
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ==========================================================================
+   4. Display Properties Section
+   ========================================================================== */
+.block-element {
+    background-color: #2ecc71;
+    color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+}
+
+/* Inline Elements Behavior */
+.inline-container {
+    margin: 1.5rem 0;
+    background-color: #fff9db;
+    padding: 1rem;
+    border-left: 4px solid #fab005;
+}
+
+.inline-element {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px; /* Vertical padding will overlap visually, showing inline limitations */
+    margin: 20px;  /* Vertical margin will be ignored by browser */
+    font-weight: bold;
+}
+
+.note {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 0.5rem;
+}
+
+/* Inline-Block Resolution (Best Practice for interactive elements) */
+.inline-block-container {
+    margin-top: 1.5rem;
+}
+
+.button-element {
+    display: inline-block; /* Resolves inline styling limitations */
+    text-decoration: none;
+    background-color: #9b59b6;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.button-element:hover {
+    background-color: #8e44ad;
+}
