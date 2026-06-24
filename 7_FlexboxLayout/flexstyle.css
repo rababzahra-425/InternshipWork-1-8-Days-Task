@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+    background-color: #eec;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Yahan saari targeted Flexbox properties apply ho rahi hain */
+.flex-container {
+    display: flex;
+    
+    /* 1. flex-direction: row | row-reverse | column | column-reverse */
+    flex-direction: row; 
+    
+    /* 2. flex-wrap: nowrap | wrap | wrap-reverse */
+    flex-wrap: wrap; 
+    
+    /* 3. justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly */
+    justify-content: space-around; 
+    
+    /* 4. align-items: stretch | flex-start | flex-end | center | baseline */
+    align-items: center; 
+    
+    /* Container Styling */
+    background-color: #ffffff;
+    min-height: 400px;
+    padding: 20px;
+    border: 3px dashed #16a085;
+    border-radius: 10px;
+}
+
+/* Flex Items Styling */
+.flex-item {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    min-width: 120px;
+}
+
+/* Har box ko different color dena taake wrap aur direction saaf nazar aaye */
+.item-1 { background-color: #e74c3c; }
+.item-2 { background-color: #3498db; }
+.item-3 { background-color: #2ecc71; }
+.item-4 { background-color: #9b59b6; }
+.item-5 { background-color: #f1c40f; }
+.item-6 { background-color: #e67e22; }
