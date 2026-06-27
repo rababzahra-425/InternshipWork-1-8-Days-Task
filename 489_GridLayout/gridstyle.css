@@ -1,0 +1,25 @@
+/* Container ko grid banaya ja raha hai */
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr; /* 2 Columns banaye */
+  gap: 15px; /* Columns aur rows ke beech 15px ka gap */
+  grid-template-areas:
+    "header header"
+    "sidebar main-content"
+    "footer footer";
+  height: 90vh;
+}
+
+/* Har HTML element ko uski sahi jagah (grid-area) di */
+.header { grid-area: header; background-color: lightcoral; }
+.sidebar { grid-area: sidebar; background-color: lightblue; }
+.main-content { grid-area: main-content; background-color: lightgreen; }
+.footer { grid-area: footer; background-color: lightgoldenrodyellow; }
+
+/* Sirf dekhne me accha lage isliye thoda padding aur text alignment */
+.box {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+}
